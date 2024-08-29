@@ -23,7 +23,7 @@ function App() {
       <AppBars setRefresh={setRefresh} refresh={refresh} />
       <div className="flex flex-wrap justify-center gap-[10px] mx-auto w-[1200px] my-[10px] ">
         {products.map((item) => (
-          <div key={item.id} className="hover:scale-105 duration-300">
+          <div key={item.id} className="hover:scale-105 duration-300 cursor-pointer">
             <Cards item={item} />
           </div>
         ))}
